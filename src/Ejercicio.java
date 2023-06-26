@@ -8,13 +8,13 @@ public class Ejercicio {
         System.out.println(texto);
     }
 
-    public void ejecutar (IOperacion operacion) {
+    public void ejecutar (Operacion operacion) {
         operacion.run("Hola mundo");
     }
 
 }
 
 @FunctionalInterface
-interface IOperacion {
+interface Operacion {
     void run (String s);
 }
